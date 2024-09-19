@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#0C27D0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:text="Name"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/text2"
+        android:hint="entrer your name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/text1"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="@id/text2"
+        android:text="Roll no"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/text3"
+        android:hint="entrer your name"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/edt1"
+        app:layout_constraintTop_toBottomOf="@id/edt1"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
+        app:layout_constraintStart_toStartOf="@id/text3"
+        android:text="Class"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintStart_toStartOf="@id/text4"
+        android:text="Password"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text5"
+        app:layout_constraintStart_toStartOf="@id/text5"
+        android:text="Confirm password"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/text4"
+        android:hint="entrer your class"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@id/edt2"
+        app:layout_constraintTop_toBottomOf="@id/edt2"/>
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/text5"
+        android:hint="entrer your password"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/edt3"
+        app:layout_constraintTop_toBottomOf="@id/edt3"/>
+
+    <EditText
+        android:id="@+id/edt5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+
+        android:hint="Confirm your password"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/text6"
+        app:layout_constraintTop_toBottomOf="@id/text6"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Passing"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt5"
+        app:layout_constraintStart_toStartOf="@+id/edt5"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
